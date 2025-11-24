@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Menu, User, Github } from 'lucide-react';
+import { ShieldCheck, User, Github } from 'lucide-react';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -28,8 +28,8 @@ const Layout: React.FC<LayoutProps> = ({ children, activeTab, onTabChange }) => 
                             <button
                                 onClick={() => onTabChange('compare')}
                                 className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'compare'
-                                        ? 'bg-white text-primary-700 shadow-sm'
-                                        : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200'
+                                    ? 'bg-white text-primary-700 shadow-sm'
+                                    : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200'
                                     }`}
                             >
                                 Face Compare
@@ -37,8 +37,8 @@ const Layout: React.FC<LayoutProps> = ({ children, activeTab, onTabChange }) => 
                             <button
                                 onClick={() => onTabChange('recognition')}
                                 className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeTab === 'recognition'
-                                        ? 'bg-white text-primary-700 shadow-sm'
-                                        : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200'
+                                    ? 'bg-white text-primary-700 shadow-sm'
+                                    : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-200'
                                     }`}
                             >
                                 Recognition
